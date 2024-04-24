@@ -1,0 +1,347 @@
+/*----------------NAVBAR--------------------*/
+.navbar {
+  width: 100%;
+  height: 80px;
+  background: #010035ce;
+  background: 252525;
+  color: rgb(2243, 157, 157);
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+}
+
+.right div {
+  margin: 0 15px;
+  padding: 10px 50px;
+  border-radius: 200px;
+  transition: all 0.5s ease-in-out;
+  color: white;
+  font-size: 25px;
+}
+
+.right div:hover {
+  background: #b32b83;
+}
+
+.left {
+  padding-left: 5%;
+  color: white;
+}
+
+
+
+
+/*----------------NAVBAR--------------------*/
+
+/*----------------Background--------------------*/
+
+.body {
+  background: #100d64;
+}
+
+/*----------------Background--------------------*/
+
+/*banner*/
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 256px;
+  overflow:clip;
+  margin-bottom: 100px;
+}
+
+.banner img{
+  width: 100%;
+}
+
+
+
+@media (max-width: 600px) {
+  .banner-text {
+    font-size: 1.5em;
+  }
+}
+
+/*banner*/
+
+/*----------------Cards--------------------*/
+
+.container1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  background: rgb(250, 250, 250);
+  width: 400px;
+  height: 450px;
+  margin: auto 8px;
+  border-radius: 1em;
+  padding: 1em;
+  filter: drop-shadow(8px 8px 4px rgba(0, 10, 85, 0.67));
+  transition: transform 450ms, scale 500ms, background-color 1s;
+  &:hover {
+    scale: 110%;
+    background-color: #f3f3f3;
+    transform: translateY(-2em);
+  }
+}
+
+.card-image {
+  background-color: #ffffff;
+  height: 400px;
+  margin-bottom: 15px;
+  border-radius: 100%;
+}
+
+.xbox {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e5/Xbox_Logo.svg);
+  background-repeat: no-repeat;
+  background-size: calc(100% - 80px);
+  background-position: center;
+  transition: filter 850ms;
+}
+
+.card:hover .xbox {
+  filter: invert(1);
+}
+
+.ps {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PlayStation_logo.svg/2560px-PlayStation_logo.svg.png);
+  background-repeat: no-repeat;
+  background-size: calc(100% - 80px);
+  background-position: center;
+  transition: filter 850ms;
+}
+
+.card:hover .ps {
+  filter: invert(1);
+}
+
+.steam {
+  background-image: url(https://static-00.iconduck.com/assets.00/steam-icon-2048x2048-qv4rzcd7.png);
+  background-repeat: no-repeat;
+  background-size: calc(100% - 80px);
+  background-position: center;
+  transition: filter 850ms;
+}
+
+.card:hover .steam {
+  filter: invert(1);
+}
+
+.link-btn {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  padding: 2px 1em;
+  border-radius: 4px;
+  background-color: #f832f2;
+
+  &:hover {
+    color: black;
+    background-color: #b800b2;
+  }
+}
+/*----------------Cards--------------------*/
+
+/*----------------line--------------------*/
+
+.line{
+  width:80%;
+  height:200px;
+  border:0 none;
+  margin-right:auto ;
+  margin-left:auto ;
+  margin-top:200px;
+  margin-bottom:90px;
+  color: #b800b2;
+}
+
+/*----------------line--------------------*/
+
+
+
+
+
+
+
+
+
+/*----------------FOOTER--------------------*/
+.footer {
+  background-color: #010035ce;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 0.9em;
+  margin: 0;
+  color: #ccc;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.8em;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+/*----------------FOOTER--------------------*/
+ 
+/*----------------snake------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+.container{
+  text-align: center;
+}
+
+
+.Game-title{
+  color: #fff;
+  text-align: center;
+}
+
+/*----------------snake------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------CONTACT----------------*/
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left1{
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right1{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #ffffff00;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn1{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #ae2788;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 2s;
+}
+
+.btn:hover{
+    background-color: #ae2788;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
